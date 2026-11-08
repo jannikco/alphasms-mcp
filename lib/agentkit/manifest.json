@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-alphasms",
+      "description": "Connect AI agents to AlphaSMS using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-alphasms/SKILL.md": "734367db4652426ac4392340f373bb7812bd59d64874a82e3540f569b48f56b4"
+  }
+}

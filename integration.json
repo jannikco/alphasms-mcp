@@ -1,37 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "245712a164ce1f17cc6bb014d21bdae845506d84a848490674387e577b0462ca",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://docs.alphasms.ua/ru/api/http/"
-  ],
   "id": "alphasms-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "AlphaSMS MCP setup and connection checker",
-  "description": "Generate AlphaSMS MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare AlphaSMS for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-alphasms-mcp",
+  "sourceRevision": "db5e49cac32627e080eef99d9742669732fde39d4ad2e61b71c81a53b769c68a",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://docs.alphasms.ua/ru/api/http/"
+  ],
+  "utility": {
+    "problem": "Prepare AlphaSMS and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "alphasms",
   "appName": "AlphaSMS",
-  "providerDocs": "https://docs.alphasms.ua/ru/api/http/",
-  "providerWebsite": "https://alphasms.ua/",
-  "authentication": {
-    "type": "api_key_query",
-    "requiredCredentialFields": [
-      "api_key"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://docs.alphasms.ua/ru/api/http/",
-    "tenantRequired": false,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-alphasms-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }
