@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "245712a164ce1f17cc6bb014d21bdae845506d84a848490674387e577b0462ca",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://docs.alphasms.ua/ru/api/http/"
+  ],
+  "id": "alphasms-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "AlphaSMS MCP setup and connection checker",
+  "description": "Generate AlphaSMS MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "alphasms",
+  "appName": "AlphaSMS",
+  "providerDocs": "https://docs.alphasms.ua/ru/api/http/",
+  "providerWebsite": "https://alphasms.ua/",
+  "authentication": {
+    "type": "api_key_query",
+    "requiredCredentialFields": [
+      "api_key"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://docs.alphasms.ua/ru/api/http/",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-alphasms-mcp",
+  "factory": "leadadapter-pipmcp",
+  "generatorVersion": 1
+}
